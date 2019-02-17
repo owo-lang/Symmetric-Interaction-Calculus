@@ -1,3 +1,5 @@
+The original repo is unmaintained (see PR 6/7). This fork is created to make it up-to-date.
+
 # Symmetric Interaction Calculus
 
 The [Symmetric Interaction Calculus](https://medium.com/@maiavictor/the-abstract-calculus-fe8c46bcf39c) is a minimal programming language and model of computation obtained by slightly modifying the Lambda Calculus so that it matches perfectly the abstract part of [Lamping's optimal reduction algorithm](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.90.2386&rep=rep1&type=pdf). Characteristics:

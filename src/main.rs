@@ -1,4 +1,5 @@
 extern crate clap;
+
 use clap::{Arg, App};
 
 mod term;
@@ -64,7 +65,7 @@ fn main() -> io::Result<()> {
     let mut code = Vec::new();
     file.read_to_end(&mut code)?;
 
-    let input : Option<Vec<u8>> = match matches.value_of("AINPUT") {
+    let input: Option<Vec<u8>> = match matches.value_of("AINPUT") {
         Some(ascii) => Some(to_string(&bitstring_to_term(&ascii_to_bits(ascii.as_bytes()), 0))),
         None => match matches.value_of("BINPUT") {
             Some(bits) => Some(to_string(&bitstring_to_term(bits.as_bytes(), 0))),
@@ -79,7 +80,7 @@ fn main() -> io::Result<()> {
         Some(mut input) => {
             code.extend_from_slice(b"\n:main ");
             code.append(&mut input);
-        },
+        }
         None => {}
     }
 
