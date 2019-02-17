@@ -10,10 +10,3 @@ edition = "2018"
 [lib]
 name = "sic"
 path = "src/lib.rs"
-
-[dependencies]
-clap = "2.32.0"
-
-[[bin]]
-name = "sic"
-path = "src/main.rs"
